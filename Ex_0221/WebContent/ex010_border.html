@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>border(선)</title>
+<style type="text/css">
+p {
+	border-width: 10px;
+	border-color: blue;
+}
+
+.box1 {
+	border-style: none;
+}
+
+.box2 {
+	border-style: hidden;
+}
+
+.box3 {
+	border-style: dotted;
+}
+
+.box4 {
+	border-style: dashed;
+}
+
+.box5 {
+	/* 가장 많이 씀 */
+	border-style: solid;
+}
+
+.box6 {
+	border-style: double;
+}
+
+.box7 {
+	border-style: groove;
+}
+
+.box8 {
+	border-style: ridge;
+}
+
+.box9 {
+	border-style: inset;
+}
+
+.box10 {
+	border: 20px green outset;
+}
+
+.div1 {
+	border: 10px green solid;
+	width: 200px;
+	height: 100px;
+}
+
+.div2 {
+	border-left: 10px blue solid;
+	border-right: 10px blue solid;
+	width: 200px;
+	height: 100px;
+}
+
+.div3 {
+	/* 12시 기준 시계방향  */
+	/* 두개 넣으면 위아래 , 양옆 */
+	/* 세개 넣으면 위, 양옆, 아래 */
+	/* 속성을 별개로 적용하고 싶으면 풀네임 사용해서 적용해야한다. */
+	border-width: 10px 20px 30px 40px;
+	border-style: double;
+	border-color: blue red;
+}
+</style>
+</head>
+<body>
+	<p class="box1">border 연습중입니다.</p>
+	<p class="box2">border 연습중입니다.</p>
+	<p class="box3">border 연습중입니다.</p>
+	<p class="box4">border 연습중입니다.</p>
+	<p class="box5">border 연습중입니다.</p>
+	<p class="box6">border 연습중입니다.</p>
+	<p class="box7">border 연습중입니다.</p>
+	<p class="box8">border 연습중입니다.</p>
+	<p class="box9">border 연습중입니다.</p>
+	<p class="box10">border 연습중입니다.</p>
+	<div class="div1">div의 border속성</div>
+	<div class="div2">div의 border속성</div>
+	<div class="div3">div의 border속성</div>
+</body>
+</html>

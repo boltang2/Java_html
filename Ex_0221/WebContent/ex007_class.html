@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>class 활용</title>
+<style type="text/css">
+/* text라는 클래스로 접근하기 위해 .을 사용 */
+/* .text {
+	color: red;
+} */
+p.text {
+	/* p태그 중에서 .text 클래스인 태그에게 접근 */
+	color: blue;
+}
+
+.text {
+	color: red;
+}
+</style>
+</head>
+<body>
+	<!-- 클래스속성 : 태그의 디자인만을 위해 존재하는 속성 
+		  중복된 이름으로 여러개의 태그에게 클래스를 지정하는 것이 가능 -->
+	<h2 class="text">클래스 연습</h2>
+	<p class="text2">개구쟁이 뽀로로</p>
+	<p class="text">크롱크롱</p>
+</body>
+</html>

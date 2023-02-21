@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>클래스의 깊이</title>
+<style type="text/css">
+/* 공백 : 클래스 내부로 접근  */
+.box h2 {
+	color: red;
+}
+
+.box p {
+	color: green;
+}
+
+span {
+	color: gray;
+}
+
+.box .box2 .s_blue {
+	color: blue;
+}
+
+h2 .s_green {
+	color: green;
+}
+/* div.box div중  box클래스 div .box div내부 중  box클래스 */
+</style>
+</head>
+<body>
+	<div class="box">
+		<h2>
+			<span>클래스</span>연습중입니다.
+		</h2>
+		<p>루피</p>
+		<div class="box2">
+			<h2>
+				<span class="s_blue">클래스</span>연습중입니다.
+			</h2>
+		</div>
+	</div>
+
+	<h2>
+		클래스<span class="s_green">연습중</span>입니다.
+	</h2>
+</body>
+</html>
