@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>overflow</title>
+<style type="text/css">
+p {
+	border: 1px solid red;
+	padding: 5px;
+	width: 50px;
+	height: 50px;
+}
+
+.a1 {
+	overflow: hidden;
+}
+
+/* 무조건 스크롤 보임 */
+.a2 {
+	overflow: scroll;
+}
+
+/* 내용이 넘치는 부분만 스크롤 */
+.a3 {
+	overflow: auto;
+}
+
+/* 기본 값 */
+.a4 {
+	overflow: visible;
+}
+</style>
+
+</head>
+<body>
+<!-- 영어는 자동 줄바꿈 안됨 -->
+	<p class="a1">aaaaaaaaaaaaaaaaaaa</p>
+	<p class="a2">aaaaaaaaaaaaaaaaaaa</p>
+	<p class="a3">aaaaaaaaaaaaaaaaaaa</p>
+	<p class="a4">aaaaaaaaaaaaaaaaaaa</p>
+	<p class="a4">aaaaaaaaaaaaaaaaaaa
+	한글한글한그하느감한글하늘하늘한글한글한글하늘한글</p>
+</body>
+</html>

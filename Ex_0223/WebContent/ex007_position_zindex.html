@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position, zindex</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	border: 1px solid red;
+	width: 100px;
+	padding: 10px;
+	/* 브라우저 기준 절대값(0,0)으로 위치 변경 */
+	position: absolute;
+}
+
+.box1 {
+	background: #aaf;
+	z-index:3;
+	left: 100px;
+	top: 100px;
+}
+
+.box2 {
+	background: #afa;
+	z-index:2;
+	left: 120px;
+	top: 120px;
+}
+
+.box3 {
+	background: #faa;
+	z-index:1;
+	left: 140px;
+	top: 140px;
+}
+</style>
+</head>
+<body>
+	<h2>box</h2>
+	<p class="box1">박스1</p>
+	<p class="box2">박스2</p>
+	<p class="box3">박스3</p>
+</body>
+</html>

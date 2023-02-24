@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>왼쪽, 오른쪽정렬</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+/* float을 가진 부모는 overflow : hidden을 넣어줘야함  */
+#container {
+	border: 1px solid red;
+	margin: 10px auto;
+	width: 500px;
+	padding: 10px;
+	background: #aaf;
+	overflow: hidden; /* 자식의 float을 해제한다 */
+}
+
+h1 {
+	text-align: center;
+}
+
+.green {
+	width: 200px;
+	height: 100px;
+	font-weight: bold;
+	background: #afa;
+	padding: 15px;
+	float: left;
+}
+
+.coffee {
+	width: 200px;
+	height: 100px;
+	font-weight: bold;
+	padding: 15px;
+	background: #faa;
+	float: right;
+}
+</style>
+</head>
+<body>
+	<div id="container">
+		<h1>커피와 녹차</h1>
+
+		<div class="green">
+			<p>발효시키지 않은, 푸른빛이 나는 차</p>
+		</div>
+		<div class="coffee">
+			<p>커피열매의 씨앗인 커피콩을 볶아서 물에 우려낸 음료</p>
+		</div>
+	</div>
+</body>
+</html>

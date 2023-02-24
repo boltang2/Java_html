@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>font</title>
+
+<style type="text/css">
+.a1 {
+	font-size: 20px;
+}
+
+.a2 {
+	font-style: italic;
+}
+
+.a3 {
+	font-weight: bolder;
+}
+
+.a4 {
+	font-family: sans-serif, "궁서", "굴림", "돋움";
+}
+/* 여러개를 준비해 가능한 글꼴을 우선적 적용 영어 글꼴은 쌍따옴표 사용안함 */
+.a5 {
+	font-variant: small-caps;
+}
+/* 소문자 크기의 대문자  */
+.a6 {
+	font: bold italic small-caps 20px "궁서", sans-serif;
+}
+/* font는 속성 순서 중요! 순서가 다르면 적용 안됨
+weight, style, variant, size, family */
+/* 한가지 속성만 변경하고 싶다면 속성명까지 정확히 입력해서 바꿔야함  */
+</style>
+</head>
+<body>
+	<p class="a1">글자 크기</p>
+	<p class="a2">글자 스타일</p>
+	<p class="a3">글자 굵기</p>
+	<p class="a4">글자 글꼴</p>
+	<p class="a5">The end</p>
+	<p class="a6">한줄로 함쳐진 font의 css속성 접근하기</p>
+</body>
+</html>
